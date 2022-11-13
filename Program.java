@@ -13,10 +13,12 @@ class Program {
   }
 
   public static void main(String[] args) {
-    for (int n = 0; n < 10; n++) {
+    for (int n = 0; n < 50; n++) {
       long value = fib(n);
       System.out.println(n + "-th element is " + value);
     }
+
+    // System.out.println(fib(50));
   }
 
 }
