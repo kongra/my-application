@@ -1,9 +1,22 @@
 class Program {
 
+  /**
+   * Computes n-th element of Fibonacci sequence.
+   */
+  static long fib(long n) {
+    if (n == 0 || n == 1) {
+      return n;
+    }
+    else {
+      return fib(n-1) + fib(n-2);
+    }
+  }
+
   public static void main(String[] args) {
-    final var x = 10;
-    System.out.println(x);
-    System.out.println("Hello World!!!");
+    for (int n = 0; n < 10; n++) {
+      long value = fib(n);
+      System.out.println(n + "-th element is " + value);
+    }
   }
 
 }
